@@ -1,4 +1,5 @@
 # odoo-project-api-sync
+odoo15
 
 ProjectApi Odoo Module
 
