@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="project_api_form_view" model="ir.ui.view">
+        <field name="name">project.api.form</field>
+        <field name="model">project.api</field>
+        <field name="arch" type="xml">
+            <form>
+
+                <sheet>
+
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="postcode"/>
+                        <field name="date_availability"/>
+                    </group>
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="project_api_tree_view" model="ir.ui.view">
+        <field name="name">project.api.tree.view</field>
+        <field name="model">project.api</field>
+        <field name="arch" type="xml">
+            <tree string="project api">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="postcode"/>
+                <field name="date_availability"/>
+
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="project_api_action" model="ir.actions.act_window">
+        <field name="name">project api</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">project.api</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            name="Project Api"
+            id="menu_project_api_root"
+            sequence="8"/>
+
+    <menuitem
+            name="project api2"
+            parent="menu_project_api_root"
+            action="project_api_action"
+            id="menu_project_api_sub"
+            sequence="5"/>
+
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+project_api.access_project_api,access_project_api,project_api.model_project_api,base.group_user,1,1,1,1
