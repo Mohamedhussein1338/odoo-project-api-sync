@@ -7,6 +7,7 @@ This repository contains an Odoo module named ProjectApi, which facilitates comm
 Features:
 
    1-Creates records in Odoo 15 and synchronizes them with Odoo 16 in real-time.
-    2-Utilizes Python requests library for making HTTP POST requests.
-    3-Demonstrates best practices for logging and error handling within an Odoo module.
+
+   
+   2-Utilizes Python requests library for making HTTP POST requests.
 
